@@ -1,0 +1,1500 @@
+/* ----------Color style---------- */
+/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Oswald:wght@300&display=swap'); */
+
+
+
+
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+main{
+    width: 100%;
+    box-sizing: border-box;
+}
+.row .col-md-12{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar{
+    padding: 10px; 
+}
+.logo{
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 15rem;
+}
+.navbar .nav{
+    padding: 5px;
+}
+.nav .nav-item{
+    position: relative;
+    border-radius: 12px;
+    margin-left: 5px;
+}
+
+.nav .nav-item .nav-link::after {
+    content: '';
+    height: 2px;
+    background-color: rgb(39, 27, 146);
+    width: 0;
+    left: 0;
+    top: 0;
+    position: absolute;
+    transition: all 0.4s linear;
+}
+.nav .nav-item .nav-link::after{
+    right: unset;
+    top: unset;
+    bottom: 0;
+    left: 0;
+}
+.nav  .nav-item .nav-link:hover::after{
+    width: 100%;
+
+}
+.nav .sub-menu ul{
+    position: absolute;
+    left: 0;
+    background:rgb(73, 72, 72);
+    display: none !important;
+    border-radius: 10px;
+}
+.nav .sub-menu:hover ul{
+    display: block !important;
+}
+.nav .sub-menu ul li{
+    display: block;
+    width: 150px;
+    border-radius: 10px;
+}
+.nav .sub-menu ul li a{
+    color: white !important;
+    font-weight: 500;
+}
+.nav .sub-menu ul li a::after{
+    background-color: white !important;
+}
+.nav .nav-item .nav-link{
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+}
+.nav .nav-item .nav-link:hover{
+    color: black;
+    box-shadow: 1px 1px 10px 2px #b8b9b9;
+}
+.search-bar {
+    position: relative;
+}
+.search-bar input[type="text"]{
+    border: 0;
+    height: 30px;
+    width: 0;
+    border-radius: 5px;
+    padding: 0;
+    background-color: rgb(212, 207, 207);
+}
+ .search-bar .search{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: none; 
+    width: 30px;
+    height: 100%;
+    border-radius: 3px;
+    color: white; 
+}
+.search-bar .search .fa{
+    position: absolute;
+    color: black;
+    font-size: 18px;
+    top: 20%;
+    left: 20%;
+    cursor: pointer;
+}
+.search-bar .search.active{
+    background-color: black;
+}
+.search-bar input[type="text"].active{
+    width: 180px;
+    padding: 0 10px;
+    right: 0;
+    transition: all 0.5s ease;
+}
+.search-bar .search .fa-search.active{
+    color: white;
+}
+.menu{
+    position: relative;
+    cursor: pointer;
+    display: none;
+}
+.menu .icon-1 {
+    position: absolute;
+}
+.menu .fa-bars{
+    position: relative;
+    font-size: 18px;
+}
+
+
+
+
+/*---------------------------------section web------------------------------ */
+
+ .web{
+    background-image: url(../img/pexels-photo-356056\ \(2\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+    z-index: -1;
+}
+.web .row .col-md-6{
+    color: white;
+    align-items: center;
+    text-align: center;
+    margin-top: 253px;
+    margin-bottom: 166px;
+    z-index: 0;
+    justify-content: center;
+}
+.web .row .col-md-6 h1{
+    letter-spacing: 2px;
+    margin-bottom: 22px;
+}
+.web .row .col-md-6 p{
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+.web .row .col-md-6 .button-group{
+    margin-top: 90px;
+
+}
+.web .row .col-md-6 .button-group .button{
+    text-transform: uppercase;
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    letter-spacing: 1px;
+    border-width: 3px;
+    font-weight: 500;
+    padding: 8px 10px 8px 10px;
+   
+}
+.web .row .col-md-6 .button-group .button:hover{
+    background-color: teal;
+    border-color: teal;
+    transition: all 0.3s ease-in ;
+    box-shadow: 1px 1px 10px 2px #b8b9b9;
+}
+.web .row .col-md-6 .button-group :nth-child(1){
+    margin-right: 20px;
+}
+.web .row .col-md-6 .button-group :nth-child(2){
+    margin-left: 20px;
+} 
+
+
+/* ---------------------ABOUT US-------------------------- */
+
+ .aboutUs .row {
+    margin: 0 65px 0 65px;
+}
+.aboutUs .row .col-md-8 {
+    text-align: center;
+    align-items: center;
+    color: black;
+    margin-top: 90px;
+    margin-bottom: 70px; 
+    letter-spacing: 1px;  
+}
+.aboutUs .row .col-md-8 h1{
+    margin-bottom: 55px; 
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.aboutUs .row .col-md-8 p{
+    font-size: 15px;
+    font-weight: 400;
+}
+.aboutUs .row .col-md-4{
+    text-align: center;
+    margin-bottom: 90px;
+}
+.aboutUs .row .col-md-4 i{
+    font-size: 48px;
+    margin-bottom: 35px;
+}
+
+.aboutUs .row .col-md-4 h3{
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.aboutUs .row .col-md-4 p{
+    font-size: 15px;
+    font-weight: 400;
+} 
+  
+/* ---------------------OUR SERVICES-------------------------- */
+
+ .servicing{
+    background-color: #E4FDF9;
+    padding-bottom: 60px;
+}
+.servicing .row {
+    margin: 0 65px 0 65px;
+}
+.servicing .row .col-md-8 {
+    text-align: center;
+    align-items: center;
+    color: black;
+    margin-top: 90px;
+    margin-bottom: 70px; 
+    letter-spacing: 1px;  
+}
+.servicing .row .col-md-8 h1 {
+    margin-bottom: 55px;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.servicing .row .col-md-8 p{
+    font-size: 15px;
+    font-weight: 400;
+}
+.servicing .row  .col-md-4 {
+    margin-bottom: 30px;
+}
+.servicing .row   .col-md-4 .card{
+    text-align: center;
+    align-items: center;
+    color: black; 
+    letter-spacing: 1px;  
+    background-color: white;
+    width: 18rem;
+    height: 23rem;
+    border-radius: unset;
+}
+.servicing .row  .col-md-4 .card i {
+    font-size: 48px;
+    margin: 35px 0 30px 0;
+}
+.servicing .row  .col-md-4 .card h4{
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.servicing .row  .col-md-4 .card p{
+    font-size: 15px;
+    font-weight: 400;
+}
+.servicing .row   .col-md-4 .card:hover{
+    background-color:#00897B ;
+    color: white;
+    transition: all 0.4s ease-in;
+    transform: scale(1.02 , 1.02 );
+    box-shadow: 1px 1px 10px 2px #717272;
+}
+.servicing .row   .col-md-4 .card:hover .btn{
+    border-color: white;
+    color: white;
+}
+.servicing .row   .col-md-4 .card .btn{
+    margin-top: 20px;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 0;
+    font-weight: 500;
+    letter-spacing: 1px;
+} 
+.servicing .row  .col-md-4 .card .btn:hover{
+    box-shadow: 1px 1px 10px 2px white;
+} 
+
+
+/* --------------------Latest Works----------------------- */
+
+ .works{
+    padding-bottom: 60px;
+}
+.works .row {
+    margin: 0 65px 0 65px;
+}
+.works .row .col-md-8 {
+    text-align: center;
+    align-items: center;
+    color: black;
+    margin-top: 90px;
+    margin-bottom: 70px; 
+    letter-spacing: 1px;  
+}
+.works .row .col-md-8 h1 {
+    margin-bottom: 55px;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.works .row .col-md-8 p{
+    font-size: 15px;
+    font-weight: 400;
+}
+.works .row .col-md-8 .button-group{
+    margin: 80px 0 20px 0;
+}
+.works .row .col-md-8 .button-group .btn{
+    border-color: #00897B;
+    border-width: 2px;
+    border-radius: 0;
+    font-weight: 500;
+}
+.works .row .col-md-8 .button-group .active{
+    background-color: #00897B;
+    color: white;
+}
+.works .row .col-md-8 .button-group .btn:hover{
+    color: white;
+    background-color: #00897B;
+    transition: all 0.3s ease-in;
+    box-shadow: 1px 1px 10px 2px #717272;
+}
+.works .row .col-md-4 {
+    margin-bottom: 30px;
+}
+.works .row   .col-md-4 .card{
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+.works .row  .col-md-4 .card:hover{
+    transition: all 0.4s ease-in;
+    transform: scale(1.02 , 1.02 );
+    box-shadow: 1px 1px 10px 2px #717272;
+}
+.works .row .col-md-4 .card img{
+    height: 18rem;
+}
+.works .row  .col-md-4 .card .word{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: -24rem;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(2, 2, 2, 57%);
+    color: white;
+    transition: all 0.6s ease-in;
+}
+.works .row  .col-md-4 .card:hover .word{
+    bottom: 0;
+}
+.works .row .col-md-4 .card .word h6{
+    margin-top: 8rem;
+}
+.works .row .col-md-4 .btn{
+    border-color: #00897B;
+    background-color: #00897B;
+    color: white;
+    border-width: 2px;
+    border-radius: 0;
+    font-weight: 500;
+    margin: 70px 0 20px 100px;
+}
+.works .row .col-md-4 .btn:hover{
+    color: black;
+    background-color: white;
+    transition: all 0.3s ease-in;
+    box-shadow: 1px 1px 10px 2px #717272;
+} 
+
+
+/* ------------------Plan--------------------- */
+
+.plan{
+    background-color: #F0F0F0;
+    padding-bottom: 90px;
+}
+.plan .row {
+    margin: 0 65px 0 65px;
+}
+.plan .row .col-md-8 {
+    text-align: center;
+    align-items: center;
+    color: black;
+    margin-top: 90px;
+    margin-bottom: 70px; 
+    letter-spacing: 1px;  
+}
+.plan .row .col-md-8 h1 {
+    margin-bottom: 55px;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.plan .row .col-md-8 p{
+    font-size: 15px;
+    font-weight: 400;
+}
+.plan .row  .col-md-4 .card:hover{
+    transition: all 0.4s ease-in;
+    transform: scale(1.02 , 1.02 );
+    box-shadow: 1px 1px 10px 2px #717272;
+}
+.plan .row  .col-md-4 .card .rectangle{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #3949AB;
+    text-align: center;
+    clip-path: polygon(180px at center 1);
+    color: white;
+    padding: 20px;
+    letter-spacing: 1px;
+}
+.plan .row  .col-md-4 .card .rectangle h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.plan .row  .col-md-4 .card .rectangle p{
+    font-size: 15px;
+    font-weight: 400;
+}
+.plan .row  .col-md-4 .card .rectangle p em{
+    font-size: 30px;
+}
+.plan .row  .col-md-4 .card .orders{
+    margin: 40px 0 40px 0;
+    text-align: center; 
+}
+.plan .row  .col-md-4 .card .orders p{
+     font-size: 15px;
+     font-weight: 400;
+     margin: 10px 0 20px 0;
+     color: #717272;
+     border-bottom: 1px solid #a09f9f;
+     width: 50%;
+     margin-left: 70px;
+}
+.plan .row  .col-md-4 .card .orders .btn{
+    border-color: black;
+    border-width: 2px;
+    border-radius: 0;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.plan .row  .col-md-4 .card .orders .btn:hover{
+    color: white;
+    background-color: #00897B;
+    border-color: #00897B;
+    transition: all 0.3s ease-in;
+    box-shadow: 1px 1px 10px 2px #717272;
+}
+.plan .row .col-md-4 .card .orders :nth-child(4){
+    margin-bottom: 40px;
+} 
+
+
+/* --------------------team--------------------- */
+
+ .team{
+    padding-bottom: 90px;
+}
+.team .row {
+    margin: 0 65px 0 65px;
+}
+.team .row .col-md-8 {
+    text-align: center;
+    align-items: center;
+    color: black;
+    margin-top: 90px;
+    margin-bottom: 70px; 
+    letter-spacing: 1px;  
+}
+.team .row .col-md-8 h1 {
+    margin-bottom: 55px;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.team .row .col-md-8 p{
+    font-size: 15px;
+    font-weight: 400;
+}
+.team .row .team-content .arrow{
+    position: absolute;
+    top: 25%;
+    border:none;
+	background-color: inherit;
+	outline: none;
+	z-index: 1;
+}
+.team .row .team-content .arrow i{
+    height: auto;
+    font-size: 25px;
+}
+.team .row .team-content .prev{
+    left: 12px;
+    top: 40%;
+}
+.team .row .team-content .next{
+    right: 12px;
+    top:40%;
+}
+.team .row .col-md-12 .col-md-4 .card{
+    border-color: white;
+}
+.team .row .col-md-12 .col-md-4 .card .card-body{
+    text-align: center;
+    margin-top: 3px;
+}
+.team .row .col-md-12 .col-md-4 .card .card-body p{
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+.team .row .col-md-12 .col-md-4 .card .card-body .icons{
+    font-size: 20px;
+}
+.team .row .col-md-12 .col-md-4 .card .card-body .icons i{
+    background-color: #e7e9e9;
+    width: 40px;
+    color: #00897B;
+    border-radius: 5px;
+    margin: 0 7px 0 7px;
+    height: 35px;
+    padding: 8px;
+}
+.team .row .col-md-12 .col-md-4 .card .card-body .icons i:hover{
+    color: white;
+    background-color: #3949AB;
+    transition: all 0.3s ease-in;
+    box-shadow: 1px 1px 10px 2px #717272;
+} 
+
+/* --------------------------Blog------------------------------- */
+ .blog{
+    padding-bottom: 90px;
+    background-color: #E4FDF9;
+}
+.blog .row {
+    margin: 0 65px 0 65px;
+}
+.blog .row .col-md-8 {
+    text-align: center;
+    align-items: center;
+    color: black;
+    margin-top: 90px;
+    margin-bottom: 70px; 
+    letter-spacing: 1px;  
+}
+.blog .row .col-md-8 h1 {
+    margin-bottom: 55px;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.blog .row .col-md-8 p{
+    font-size: 15px;
+    font-weight: 400;
+}
+.blog .row .col-md-6 img{
+    width: 100%;
+}
+.blog .row .col-md-6{
+    letter-spacing: 1px;
+}
+.blog .row .col-md-6 h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 50px;
+}
+.blog .row .col-md-6 p{
+    font-size: 15px;
+    font-weight: 400;
+}
+.blog .row .col-md-6 .number{
+    display: flex;
+    margin-top: 20px;
+}
+.blog .row .col-md-6 .number p{
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.blog .row .col-md-6 .number i{
+    margin-top: 5px;
+}
+.blog .row .col-md-6 .number :nth-child(2){
+    margin-right: 30px;
+}
+.blog .row .col-md-4 .btn{
+    border-color:#00897B;
+    color: white;
+    background-color: #00897B;
+    border-width: 2px;
+    border-radius: 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 100px 0 20px 70px;
+    width: 50%;
+}
+.blog .row .col-md-4 .btn:hover{
+    color: black;
+    background-color: white;
+    transition: all 0.3s ease-in;
+    box-shadow: 1px 1px 10px 2px #717272;
+} 
+
+/* -----------------Contact Us----------------------- */
+
+.contactUs{
+    padding-bottom: 90px;
+    background-image: url(../img/footerpic.png);
+}
+.contactUs .row {
+    margin: 0 65px 0 65px;
+}
+.contactUs .row .col-md-8 {
+    text-align: center;
+    align-items: center;
+    color: white;
+    margin-top: 90px;
+    margin-bottom: 70px; 
+    letter-spacing: 1px;  
+}
+.contactUs .row .col-md-8 h1 {
+    margin-bottom: 55px;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.contactUs .row .col-md-8 p{
+    font-size: 15px;
+    font-weight: 400;
+}
+.contactUs .row .col-md-12 .col-md-4{
+    text-align: center;
+    color: white;
+}
+.contactUs .row .col-md-12 .col-md-4 i{
+    font-size: 40px;
+    background-color: #3949AB;
+    color: white;
+    padding: 25px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+.contactUs .row .col-md-12 .col-md-4 i:hover{
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease-in;
+    box-shadow: 1px 1px 10px 2px #717272;
+}
+.contactUs .row .col-md-12 .col-md-4 p{
+    margin: 0;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+.contactUs .row .col-md-6 input{
+    /* width: 77%; */
+    height: 50px;
+    margin-top: 60px;
+}
+.contactUs .row .col-md-6:nth-child(1){
+    /* margin-left: 50px; */
+}
+.contactUs .row .col-md-12 textarea{
+    margin-top: 30px;
+    /* margin-left: 65px;
+    width: 818px; */
+    height: 165px;
+}
+.contactUs .row  .col-md-6 .btn{
+    color: white;
+    text-align: center;
+    margin-top: 30px; 
+    border-color: white;
+    border-width: 2px;
+    float: right;
+    width: 30%;
+    height: 50px;
+    font-weight: 500;
+}
+.contactUs .row .col-md-6 .btn:hover{
+    background-color: white;
+    color: black;
+    transition: all 0.6s ease-in;
+    box-shadow: 1px 1px 10px 2px #717272;
+}
+.footer {
+    background-color:white;
+}
+.footer .row{
+    margin:  0 65px 0 65px;
+}
+.footer .row .col-md-12{
+    margin-top: 15px;
+    text-align: center;
+   
+}
+.footer .row .col-md-12{
+     letter-spacing: 2px;
+     font-size: 15px;
+     font-weight: 400;
+     justify-content: center;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*---------------------- MEDIA QUERY ----------------------*/
+ @media  screen and (max-width:1199px){
+    .logo{
+        margin-right:0;
+    }
+    .servicing .row {
+        margin: 0px 30px 0 10px;
+    }
+    .works .row .col-md-4 .btn {
+      margin-left: 70px;
+    }
+    .team .row .col-md-12 .col-md-4 .card .card-body .icons i{
+        margin:  0 1px 0 1px;
+    }
+    .plan .row .col-md-4 .card .orders p {
+        margin-left: 55px;
+    }
+  
+}
+@media screen and (max-width:991px){
+    .col-md-12{
+        margin-top: 15px;
+    }
+    .navbar.navs{
+        position: absolute !important;
+        width: 260px;
+        padding: 5px;
+        height: 20rem;
+        top: 100%;
+        right:14.5px;
+        background-color:black;
+        z-index: 1;
+    }
+    .navbar .nav.navs {
+        display: block; 
+    }
+    .navbar .nav{
+        padding: 0;
+        display: none; 
+    } 
+    .navbar .nav-item{
+        margin-left: 0;
+        padding: 5px;
+    }
+    .navbar .nav-item .nav-link{
+        font-size: 15px;
+        color: white;
+    }
+    .navbar .nav-item .nav-link:hover{
+        color: white;
+    }
+    .nav .nav-item .nav-link::after{
+        background-color: white;
+    }
+    .nav .sub-menu .nav-item .nav-link::after {
+        background-color: white;
+        right: 0;
+        top: unset;
+        bottom: 0;
+        left: unset;
+    }
+    .nav .sub-menu ul{
+        position: absolute;
+        left: 100px;
+        top: 5px; 
+    }
+    .search-bar .search .fa{
+       font-size: 18px;
+    }
+    .search-bar input[type="text"].active{
+        width: 180px;
+    }
+    .menu{
+        position: relative;
+        display: block;  
+    }
+    .menu .icon-1 {
+        position: absolute;
+    }
+    .menu .fa-bars{
+        position: relative;
+        font-size: 18px;
+    } 
+    /* .close.navs{
+        display: block;
+        z-index: 1;
+        margin-right: 15px;
+        margin-top: 6px;
+    } */
+
+    /*------------------------- web ------------------------*/
+     .web{
+         width: 100%;
+         height: 100%;
+     }
+     .web .row .col-md-6 {
+        margin-top: 82px;
+        margin-bottom: 82px;
+    }
+
+     /*----------------------About Us---------------------- */
+     .aboutUs .row{
+         margin: 0;
+     }
+
+     /* --------------------Servicing--------------------- */
+    .servicing .row{
+         margin: 0;
+     }
+    .servicing .cards {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(280px , 2fr));
+         grid-gap: 15px;
+         box-sizing: border-box;
+         margin-left: 15px;        
+     } 
+     
+     /* ---------------------Works------------------------- */
+
+    .works .row .col-md-8 .button-group{
+        margin-bottom: 0;
+        margin-top: 60px;
+    }
+    .works .row .col-md-8 .button-group .btn{
+        margin-bottom: 8px;
+    }
+    .works .row{
+         margin: 0;
+     }
+     .works .row .col-md-4 .btn {
+        margin-left: 55px;
+      }  
+
+      /* -----------------------Plan--------------------------- */
+
+      .plan .row{
+          margin: 0;
+      }
+
+      .plan .row .col-md-4 .card .orders p{
+        width: 70%;
+        margin-left: 30px;
+      }
+
+       /* ----------------------team---------------------------- */
+       
+       .team .row {
+          margin: 0;
+       }
+      .team .row .col-md-12 .col-md-4 .card .card-body .icons i{
+         margin-top: 3px;
+         font-size: 17px;
+         height: 30px;
+         padding: 7px;
+      }
+
+       /* ----------------------Blog--------------------------- */
+
+       .blog .row{
+           margin: 0;
+       }
+       .blog .row .col-md-4 .btn{
+           margin: 100px 0 20px 30px;
+           width: 60%;
+       } 
+     /* ----------------------contactUs--------------------------- */
+       .contactUs .row{
+           margin: 0;
+       }
+      /* 
+      .contactUs .row .col-md-12 textarea {
+            width: 594px;
+      }
+      .contactUs .row .btn {
+        margin-left: 36rem;
+    } */
+      /*  .contactUs .row .btn{
+        margin-left: 570px;
+      }
+     
+      } */
+       /* .contactUs .row .col-md-12 .col-md-6 input {
+            width: 77%;
+      }
+      .contactUs .row .col-md-12 textarea{
+          width: 85%;
+      }
+      .contactUs .row .col-md-3 .btn{
+          width: 66%;
+      }
+      .contactUs .row .col-md-2 .btn{
+        margin-left: -31px;
+    } */
+   
+}
+
+ @media screen and (max-width:767px){
+  
+    .web .row .col-md-6 h1{
+        font-size: 24px;
+        width: 105%;
+        margin-left: -5px;
+    }
+    .web .row .col-md-6 p{
+        width: 161%;
+        margin-left: -70px;
+    }
+    .web .row .col-md-6 .button-group{
+      display: flex;
+    }
+    .web .row .col-md-6 .button-group .button{
+        font-size: 11px;
+        border-width: 3px;
+        padding-left: 4px; 
+        padding-right: 4px;
+    } 
+
+    /*---------------------- aboutUs -------------------- */
+     
+    .aboutUs .icon-1 :nth-child(2) p{
+        margin-top: 54px;  
+    }
+    /* --------------------Servicing--------------------- */
+    .servicing .row .col-md-4 .card{
+        margin-left: 5rem;
+    }
+
+    /* ----------------------Works------------------------ */
+   
+    .works .row .col-md-4 .btn {
+        margin-left: 25px;
+    }
+
+    /* ----------------------plan-------------------------- */
+    .plan .row .col-md-8{
+        margin-bottom: 30px;
+    }
+    .plan .row .col-md-4{
+        margin-top: 2rem;
+    }
+    .plan .row .col-md-4:nth-child(3){
+        margin: 0 auto;
+    }
+    .plan .row .col-md-4 .card {
+        margin-top: 2rem;
+    }
+    .plan .row .col-md-4 .card .orders .btn {
+        font-size: 15px;
+    }
+  /* ----------------------Blog---------------------------- */
+    /* .blog .row .col-md-8{
+        margin-bottom: 50px;
+    }
+    .blog .card-group{
+        display: block;
+    }
+    .blog .row .col-md-6{
+        margin-top: 20px;
+    } */
+    .blog .card-group .x{
+        margin-bottom: 4rem;
+    }
+    .blog .row .col-md-4 .btn {
+        width: 50%;
+        margin-left: 0px;
+    }
+
+
+    /* ------------------------contact us------------------------ */
+    .contactUs .row .telecom{
+        display: block;
+     } 
+    .contactUs .row .col-md-12 .col-md-4{
+        margin-top: 30px;
+    }
+    .contactUs .row .col-md-8{
+        margin-bottom: 40px;
+    }
+     /* .contactUs .row .col-md-12 .col-md-4:nth-child(3){
+         margin-bottom: 3rem;
+     }
+     .contactUs .row .col-md-12 textarea {
+        width: 425px;
+    } */
+  /*   
+  
+    .contactUs .row .col-md-8 {
+        margin-bottom: 50px;
+    }
+    .contactUs .row .btn{
+        margin-left: 420px;
+      } */
+ 
+    
+} 
+@media screen and (max-width:575px){
+    .web .row .col-md-6 h1 {
+        width: 65%;
+    }
+    .web .row .col-md-6 p {
+        width: 100%;
+    }
+  
+    /*---------------------- aboutUs -------------------- */
+
+    .aboutUs .row .col-md-8 {
+        margin-top: 70px;
+        margin-bottom: 50px;
+        width: 67%;
+    }
+    .aboutUs .row .col-md-8 h1 {
+        margin-bottom: 45px;
+    }
+    .aboutUs .row .col-md-4 {
+        margin-bottom: 50px;
+    }
+    .aboutUs .row .col-md-4 i {
+        margin-bottom: 25px;
+    }
+    .aboutUs .row .col-md-4 h3 {
+        margin-bottom: 20px;
+    }
+   .aboutUs .icon-1 :nth-child(2) p {
+        margin-top: 0;
+    }
+
+    /* -------------------Servicing-------------------- */
+    
+    .servicing .row .col-md-8 {
+        margin-top: 70px;
+        margin-bottom: 50px;
+        width: 67%;
+    }
+    .servicing .row .col-md-8 h1 {
+        margin-bottom: 45px;
+    }
+    .servicing .row .col-md-4 .card{
+        margin: 0 auto;
+        width: 18rem;
+        height: 21rem;
+    }
+    .servicing .cards{
+        margin-left: 0;
+    }
+    
+    .servicing .row  .col-md-4 {
+        margin-bottom: 20px;
+    }
+
+    .servicing .row  .col-md-4 .card i {
+        margin: 28px 0 25px 0;
+    }
+    .servicing .row  .col-md-4 .card h4{
+        margin-bottom: 20px;
+    }
+    .servicing .row   .col-md-4 .card .btn{
+        margin-top: 15px;
+    } 
+
+    /* -----------------------Works------------------------- */
+    .works .cards{
+        margin-left: 0;
+    }
+    .works .row .col-md-8 {
+        margin-top: 70px;
+        margin-bottom: 50px;
+        width: 67%;
+    }
+    .works .row .col-md-8 h1 {
+        margin-bottom: 45px;
+    }
+    .works .row .col-md-4 .btn {
+        margin-left: 20px;
+      }
+
+ /* ---------------------Plan------------------------ */
+    
+    .plan .row .col-md-8 {
+        margin-top: 70px;
+        margin-bottom: 50px;
+        width: 67%;
+    }
+    .plan .row .col-md-8 h1 {
+        margin-bottom: 45px;
+    }
+    .plan .row .col-md-4:nth-child(3){
+        margin-left: 0rem;
+        margin-top: 2rem;
+    }
+    .plan .row .col-md-4 .card .orders p {
+        width: 80%;
+        margin-left: 50px;
+    }
+
+
+/* ---------------------Team------------------------ */
+
+    .team .row .col-md-8 {
+        margin-top: 70px;
+        margin-bottom: 50px;
+        width: 67%;
+    }
+    .team .row .col-md-8 h1 {
+        margin-bottom: 45px;
+    }
+
+    /* ---------------------Blog------------------------ */
+
+    .blog .row .col-md-8 {
+        margin-top: 70px;
+        margin-bottom: 50px;
+        width: 67%;
+    }
+    .blog .row .col-md-8 h1 {
+        margin-bottom: 45px;
+    }
+    .blog .row .col-md-4 .btn {
+        width: 40%;
+    }
+ /* ---------------------ContactUs------------------------ */
+
+    .contactUs .row .col-md-8 {
+        margin-top: 70px;
+        margin-bottom: 50px;
+        width: 67%;
+    }
+    .contactUs .row .col-md-8 h1 {
+        margin-bottom: 45px;
+    }
+}
+
+@media screen and (max-width:540px){
+    .works .row .col-md-4 .btn{
+        margin-left: 15px;
+    }
+    /* .blog .row .col-md-4 .btn{
+      font-size: 15px;
+      width: 45%;
+    } */
+}
+
+ @media screen and (max-width:450px){
+    .navbar.navs{
+         width: 200px;
+    }
+    .nav .sub-menu:hover ul{
+        display: none !important;
+    }
+    .search-bar input[type="text"].active{
+        width: 120px;
+    }
+    
+
+
+    /* ----------------web------------------ */
+    .web .row .col-md-6 p{
+        width: 110%;
+    }
+    .web .row .col-md-6 .button-group {
+        width: 65%;
+        display: block;
+    }
+    .web .row .col-md-6 .button-group .button{
+        font-size: 9px;
+        width: 100%;
+    }
+    .web .row .col-md-6 .button-group :nth-child(2){
+        margin: 10px 0;
+    }
+  /* ----------------------works------------------------- */
+    
+    .works .row .col-md-4 .btn {
+        margin-left: 5px;
+    }
+ /* ----------------------plan------------------------- */
+    .plan .row .col-md-4 .card .orders p {
+        margin-left: 40px;
+    }
+    /* --------------------blog-------------------------- */
+    .blog .row .col-md-6 h3 {
+        margin-top: 30px;
+    }
+    .blog .row .col-md-4 .btn {
+        margin-top: 70px;
+        margin-bottom: 10px;
+    }
+   
+ }
+
+ @media screen and (max-width:360px){
+     .web .row .col-md-6 h1{
+         font-size: 20px;
+     }
+     .web .row .col-md-6 p{
+         width: 120%;
+         font-size: 12px;
+     }
+     .web .row .col-md-6 .button-group .button{
+         font-size: 8px;
+         border-width: 2px;
+     }
+
+     /* ----------------------aboutUs----------------------------- */
+     .aboutUs .row .col-md-8 h1{
+        font-size: 19px;
+     }
+    .aboutUs .row .col-md-8 p{
+        font-size: 12px;
+    }
+    .aboutUs .row .col-md-4 i{
+        font-size: 40px;
+    }
+    .aboutUs .row .col-md-4 h3{
+        font-size: 16px;
+    }
+    .aboutUs .row .col-md-4 p{
+        font-size: 12px;
+    } 
+
+    /* ---------------------Servicing------------------------ */
+    .servicing .row .col-md-8 h1 {
+        font-size: 19px;
+    }
+    .servicing .row .col-md-8 p{
+        font-size: 12px;
+    }
+
+    .servicing .row   .col-md-4 .card{
+        width: 15rem;
+        height: 19rem;
+        padding: 2px;
+    }
+    .servicing .row  .col-md-4 .card i {
+        font-size: 40px;
+    }
+    .servicing .row  .col-md-4 .card h4{
+        font-size: 16px;
+    }
+    .servicing .row  .col-md-4 .card p{
+        font-size: 12px;
+    }
+    .servicing .row   .col-md-4 .card .btn{
+        margin-top: 15px;
+        font-size: 12px;
+    } 
+
+    /* ------------------works-------------------- */
+
+    .works .row .col-md-8 h1 {
+        font-size: 19px;
+    }
+    .works .row .col-md-8 p{
+        font-size: 12px;
+    }
+    .works .row .col-md-8 .button-group{
+        margin: 50px 0 0px 0;
+    }
+    .works .row .col-md-8 .button-group .btn{
+       font-size: 12px;
+    }
+    .works .row .col-md-4 .btn {
+        margin-left: -10px;
+        font-size: 13px;
+    }
+
+
+    /* ------------------plan---------------------- */
+   
+    .plan .row .col-md-8 h1 {
+        font-size: 19px;
+    }
+    .plan .row .col-md-8 p{
+        font-size: 12px;
+    }
+    .plan .row .col-md-4 .card .rectangle {
+        padding: 10px;
+    }
+    .plan .row .col-md-4 .card .rectangle p{
+        font-size: 13px;
+    }
+    .plan .row .col-md-4 .card .rectangle h3{
+        margin-top: 18px;
+        font-size: 16px;
+    }
+    .plan .row .col-md-4 .card .orders p {
+        margin-left: 30px;
+        font-size: 12px;
+    }
+    .plan .row .col-md-4 .card .orders .btn {
+        font-size: 12px;
+    }
+    .plan .row .col-md-4 .card .rectangle p em {
+        font-size: 25px;
+    }
+    .plan .row .col-md-8 {
+        margin-bottom: 25px;
+    }
+
+  /* ------------------------team--------------------------------- */
+    .team .row .col-md-8 h1 {
+        font-size: 19px;
+    }
+    .team .row .col-md-8 p{
+        font-size: 12px;
+    }
+    .team .row .col-md-12 .col-md-4 .card .card-body {
+        margin-top: 2px;
+    }
+    .team .row .col-md-12 .col-md-4 .card .card-body p {
+        margin-bottom: 15px; 
+    }
+
+  /* ------------------------blog--------------------------------- */
+    .blog .row .col-md-8 h1 {
+        font-size: 19px;
+    }
+    .blog .row .col-md-8 p{
+        font-size: 12px;
+    }
+    .blog .row .col-md-6 h3{
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .blog .row .col-md-6 p{
+        font-size: 12px;
+    }
+    .blog .row .col-md-6 .number p{
+        font-size: 12px;
+    }
+    .blog .row .col-md-6 .number i{
+        font-size: 14px;
+    }
+    .blog .row .col-md-4 .btn{
+       font-size: 10px;
+    }
+
+  /* ------------------------contactUs--------------------------------- */
+    .contactUs .row .col-md-8 h1 {
+        font-size: 19px;
+    }
+    .contactUs .row .col-md-8 p{
+        font-size: 12px;
+    }
+    .contactUs .row .col-md-12 .col-md-4 i{
+        font-size: 25px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .contactUs .row .col-md-12 .col-md-4 p{
+        font-size: 12px;
+    }
+    .contactUs .row .col-md-8{
+        margin-bottom: 20px;
+    }
+    .contactUs .row .col-md-6 input {
+        height: 40px;
+        margin-top: 50px;
+    }
+    .contactUs .row .col-md-12 textarea{
+        height: 125px;
+    }
+    .contactUs .row .col-md-6 .btn{
+        font-size: 15px;
+        height: 40px;
+
+    }
+
+    .footer .row .col-md-12{
+        font-size: 12px;
+    }
+
+ }
+
+ @media screen and (max-width:320px){
+    .web .row .col-md-6 p{
+        width: 130%;
+    }
+    .servicing .cards{
+        margin-left: -15px;
+    }
+    .servicing .row .col-md-4 .card{
+        width: 13rem;
+    } 
+    .plan .row .col-md-4 .card .orders p {
+        margin-left: 27px;
+    }
+
+    /* ------------------------team--------------------------------- */
+    .team .row .col-md-12 .col-md-4 .card .card-body .icons i {
+        font-size: 16px;
+        margin: 0 2px 0 2px;
+        width: 28px;
+    }
+    /* ------------------------blog--------------------------------- */
+    /* .blog .row .col-md-6 .number :nth-child(2) {
+        margin-right: 25px;
+    }
+    .blog .row .col-md-4 .btn {
+        margin: 60px 0 5px 0px;
+    } */  
+ }
+
+ @media screen and (max-width:280px){
+    .web .row .col-md-6 h1{
+      width: 75%;
+    }
+    .web .row .col-md-6 p{
+        width: 140%;
+    }
+    .web .row .col-md-6 .button-group{
+        width: 65%;
+    }
+    .web .row .col-md-6 .button-group :nth-child(2){
+        margin-top: 10px;
+        margin-left: 0px;   
+    }
+    .works .row .col-md-4 .btn {
+        margin-left: -20px;
+    }
+    .plan .row .col-md-4 .card .orders p {
+        margin-left: 22px;
+    }
+
+      /* ------------------------blog--------------------------------- */
+      .blog .row .col-md-6 .number :nth-child(2) {
+        margin-right: 15px;
+    }
+    .blog .row .col-md-4 .btn{
+        width: 50%;
+    }
+ }
+ 
+ 
+  
